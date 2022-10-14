@@ -1,0 +1,249 @@
+@import "mixin_variables.scss";
+
+@media (max-width: 1200px) {
+    .sidebar {
+        max-width: 250px;
+        padding: 10px;
+        .logo {
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        .info {
+            margin-top: 800px;
+        }
+    }
+    .product {
+        padding: 20px;
+        h2 {
+            font-size: 22px;
+        }
+        .table {
+            .header-title {
+                font-size: 20px;
+            }
+            &-info {
+                thead {
+                    tr {
+                        th {
+                            text-align: center;
+                            line-height: 18px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            line-height: 18px;
+                            text-align: center;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        max-width: 200px;
+        padding: 10px;
+        .logo {
+            img {
+                width: 34px;
+                height: 34px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+        .menu {
+            &_nav {
+                li {
+                    a {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        width: 180px;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .product {
+        .table {
+            padding: 20px;
+            .header-title {
+                font-size: 16px;
+                line-height: 18px;
+            }
+            .header-subtitle {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            &-info {
+                tbody {
+                    tr {
+                        td {
+                            .btn-active {
+                                width: 60px;
+                                height: 20px;
+                                font-size: 12px;
+                                line-height: 16px;
+                                padding: 0 6px;
+                            }
+                            .btn-inactive {
+                                width: 60px;
+                                height: 20px;
+                                font-size: 12px;
+                                line-height: 16px;
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-footer {
+                .footer-pages {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+                .pagination {
+                    :nth-child(4) {
+                        display: none;
+                    }
+                    :nth-child(5) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        grid-template-rows: 1fr 5fr;
+        grid-template-columns: none;
+        .sidebar {
+            display: grid;
+            padding: 10px;
+            max-width: max-content;
+            .logo {
+                grid-column: 1 / 2;
+                grid-row: 1 / 1;
+                display: inline-flex;
+                max-width: max-content;
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+                h1 {
+                    margin: 5px;
+                    font-size: 18px;
+                }
+            }
+            .menu {
+                max-height: max-content;
+                margin: 0;
+                ul {
+                    display: inline-flex;
+                    max-height: max-content;
+                    padding-left: 0;
+                    margin: 0;
+                    li {
+                        max-width: 10px;
+                        padding: 30px;
+                        max-height: max-content;
+                        a {
+                            background-position: 15px 9px;
+                            font-size: 0;
+                            max-width: 10px;
+                            img {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .info {
+            grid-column: 1 / 2;
+            grid-row: 1 / 1;
+            margin-top: 0;
+            margin-left: 70%;
+            max-height: max-content;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            align-content: flex-end;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+        .product {
+            padding: 10px;
+            h2 {
+                line-height: 26px;
+                font-size: 18px;
+            }
+            .table {
+                .header-title {
+                    font-size: 16px;
+                }
+                .header-subtitle {
+                    font-size: 10px;
+                }
+                &-info {
+                    thead {
+                        tr {
+                            th {
+                                text-align: center;
+                                line-height: 14px;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                line-height: 14px;
+                                text-align: center;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                &-footer {
+                    .footer-pages {
+                        font-size: 10px;
+                        line-height: 14px;
+                    }
+                    .pagination {
+                        .btn-pagination {
+                            font-size: 10px;
+                            width: 24px;
+                            height: 22px;
+                        }
+                        :nth-child(4) {
+                            display: none;
+                        }
+                        :nth-child(5) {
+                            display: none;
+                        }
+                        :nth-child(7) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

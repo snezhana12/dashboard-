@@ -1,0 +1,32 @@
+.btn-active {
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  width: 80px;
+  height: 29px;
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00b087;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #008767;
+  cursor: pointer;
+}
+
+.btn-inactive {
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  width: 80px;
+  height: 29px;
+  background: #ffc5c5;
+  border: 1px solid #df0404;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #df0404;
+  cursor: pointer;
+}
+
